@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="editorial-apple">
+    <meta name="bpaas-design-theme" content="kr-warm-grid">
+    <title>가이드 | 도메인 지수 탈모 방지 및 앵커 텍스트 이식 가이드</title>
+    <meta name="description" content="도메인 지수 탈모를 막고 앵커 텍스트를 전략적으로 이식하는 완벽 가이드. 자동완성 기능 최적화부터 사용자 경험 개선까지, 지수 성장을 위한 실전 전략을 지금 확인하세요.">
+    <meta name="keywords" content="도메인 지수, 탈모 방지, 앵커 텍스트, 이식 가이드, 자동완성 테스트 키워드, 자동완성 기능 최적화 방법, 자동완성 알고리즘 비교 분석, 자동완성 사용자 경험 개선 팁, 지수 성장 클리닉, BPaaS, SaaS 오토파일럿">
+    <link rel="canonical" href="https://aga-uhake.space/">
+    <meta property="og:title" content="도메인 지수 탈모 방지 및 앵커 텍스트 이식 가이드 | 지수 성장 클리닉">
+    <meta property="og:description" content="당신의 도메인이 조용히 죽어가고 있다면, 이 가이드가 구명줄이 되어줄 거예요.">
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1d1d1f; background: #f5f5f7; overflow-x: hidden; }
+
+        /* Container */
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+        /* Sticky Nav */
+        nav { position: sticky; top: 0; z-index: 100; background: rgba(245,245,247,0.85); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-bottom: 1px solid rgba(0,0,0,0.08); }
+        nav .container { display: flex; justify-content: space-between; align-items: center; padding-top: 12px; padding-bottom: 12px; }
+        .logo { font-size: 1.25rem; font-weight: 700; letter-spacing: -0.02em; color: #1d1d1f; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+        .logo span { background: #1d1d1f; color: #f5f5f7; padding: 4px 10px; border-radius: 6px; font-size: 0.8rem; font-weight: 600; }
+        .nav-links { display: flex; gap: 32px; align-items: center; list-style: none; }
+        .nav-links a { text-decoration: none; color: #6e6e73; font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+        .nav-links a:hover { color: #1d1d1f; }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; padding: 4px; }
+        .hamburger span { display: block; width: 22px; height: 2px; background: #1d1d1f; border-radius: 1px; transition: all 0.2s; }
+
+        /* Main */
+        main { padding: 64px 0; }
+        .article-header { text-align: center; margin-bottom: 64px; }
+        .article-header h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.15; margin-bottom: 20px; color: #1d1d1f; }
+        .article-header p { font-size: 1.2rem; color: #6e6e73; max-width: 680px; margin: 0 auto 32px; }
+        .badge { display: inline-block; background: #1d1d1f; color: #f5f5f7; padding: 8px 20px; border-radius: 20px; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.02em; margin-bottom: 16px; }
+
+        /* Content Grid */
+        .content-grid { display: grid; grid-template-columns: 1fr; gap: 40px; max-width: 800px; margin: 0 auto; }
+        .section-card { background: #ffffff; border-radius: 20px; padding: 40px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); border: 1px solid rgba(0,0,0,0.06); transition: box-shadow 0.3s; }
+        .section-card:hover { box-shadow: 0 8px 30px rgba(0,0,0,0.08); }
+        .section-card h2 { font-size: 1.75rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 16px; color: #1d1d1f; }
+        .section-card h3 { font-size: 1.25rem; font-weight: 600; margin: 24px 0 12px; color: #1d1d1f; }
+        .section-card p { color: #424245; margin-bottom: 16px; font-size: 1.05rem; }
+        .section-card ul, .section-card ol { padding-left: 24px; margin-bottom: 20px; color: #424245; }
+        .section-card li { margin-bottom: 8px; }
+        .highlight-box { background: #f9f9fb; border-left: 4px solid #1d1d1f; padding: 20px 24px; border-radius: 12px; margin: 24px 0; }
+        .highlight-box p { margin-bottom: 8px; font-style: italic; color: #1d1d1f; }
+
+        /* FAQ */
+        .faq-grid { display: grid; gap: 16px; margin-top: 32px; }
+        .faq-item { background: #ffffff; border-radius: 16px; padding: 24px 28px; border: 1px solid rgba(0,0,0,0.05); cursor: pointer; transition: all 0.2s; }
+        .faq-item:hover { background: #f9f9fb; }
+        .faq-item h4 { font-size: 1.1rem; font-weight: 600; margin-bottom: 8px; color: #1d1d1f; }
+        .faq-item p { color: #6e6e73; font-size: 0.95rem; }
+
+        /* Footer */
+        footer { text-align: center; padding: 48px 0; color: #6e6e73; font-size: 0.9rem; border-top: 1px solid rgba(0,0,0,0.06); }
+        footer a { color: #1d1d1f; text-decoration: none; font-weight: 500; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .section-card { padding: 24px; }
+            main { padding: 40px 0; }
+            .article-header { margin-bottom: 40px; }
+            .content-grid { gap: 24px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <a href="/" class="logo">
+                지수성장클리닉 <span>BETA</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/guide">가이드</a></li>
+                <li><a href="/tools">도구</a></li>
+                <li><a href="/faq">FAQ</a></li>
+                <li><a href="tel:010-0000-0000" class="tel-link">상담 전화</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <header class="article-header">
+                <span class="badge">📘 실전 가이드</span>
+                <h1>도메인 지수 탈모 방지 및 앵커 텍스트 이식 가이드</h1>
+                <p>당신의 도메인이 조용히 죽어가고 있다면, 이 가이드가 구명줄이 되어줄 거예요. 우리 함께 지수 탈모를 막고, 검색엔진이 사랑하는 도메인으로 키워봐요.</p>
+            </header>
+
+            <div class="content-grid">
+                <!-- 섹션 1: 지수 탈모란 무엇인가 -->
+                <article class="section-card">
+                    <h2>💇‍♂️ 도메인 지수 탈모, 대체 그게 뭔가요?</h2>
+                    <p>솔직히 말해서, 저도 처음엔 이 말이 좀 웃겼어요. "도메인이 대머리가 된다고?" 근데 진짜예요. 검색엔진에서 당신 도메인의 인덱스 페이지 수가 서서히 줄어드는 현상을 우리는 '지수 탈모'라고 불러요. 마치 머리카락이 빠지듯이, 어느 날 문득 확인해보면 수백 개의 페이지가 사라져 있죠.</p>
+                    <p>이게 왜 생기냐면요, 크게 세 가지 원인이 있어요:</p>
+                    <ul>
+                        <li><strong>저품질 콘텐츠의 누적</strong> — 검색엔진이 "아, 이 페이지는 가치가 없구나"라고 판단하면 인덱스에서 제외시켜요.</li>
+                        <li><strong>앵커 텍스트의 부자연스러운 패턴</strong> — 상업적인 키워드로만 도배된 앵커 텍스트는 검색엔진에게 스팸 신호로 읽혀요.</li>
+                        <li><strong>크롤링 예산 낭비</strong> — 중요하지 않은 페이지에 크롤러의 시간을 뺏기면, 정작 중요한 페이지가 인덱싱되지 못해요.</li>
+                    </ul>
+                    <div class="highlight-box">
+                        <p>"지수 탈모는 갑자기 오지 않아요. 서서히, 아주 천천히 진행되죠. 그래서 더 무서운 거예요." — 경험자의 한마디</p>
+                    </div>
+                </article>
+
+                <!-- 섹션 2: 앵커 텍스트 이식 전략 -->
+                <article class="section-card">
+                    <h2>🔗 앵커 텍스트 이식, 그냥 링크 거는 게 아니에요</h2>
+                    <p>앵커 텍스트는 링크에 붙는 텍스트잖아요? 이걸 잘 '이식'한다는 건, 마치 피부 이식 수술처럼 섬세하게 접근해야 한다는 뜻이에요. 무작정 "도메인 지수 탈모 방지"만 반복해서 링크 걸면, 검색엔진이 바로 의심해요. "어? 이거 인위적인데?"</p>
+                    <h3>자연스러운 앵커 텍스트 분포를 만들어야 해요</h3>
+                    <p>제가 항상 추천하는 비율은 이래요:</p>
+                    <ul>
+                        <li><strong>브랜드 앵커</strong> (예: "지수성장클리닉") — 40~50%</li>
+                        <li><strong>일반 URL 앵커</strong> (예: "여기", "이 페이지") — 20~30%</li>
+                        <li><strong>부분 일치 키워드</strong> (예: "지수 탈모를 막는 방법") — 15~20%</li>
+                        <li><strong>정확한 일치 키워드</strong> (예: "도메인 지수 탈모 방지") — 5% 이하로!</li>
+                    </ul>
+                    <p>이걸 지키지 않으면, 검색엔진이 펭귄 알고리즘으로 당신 도메인을 때려버릴 수 있어요. 진짜 경험담이에요. 제가 예전에 키워드 앵커만 70% 넘게 썼다가, 한 달 만에 인덱스 페이지가 반토막 났었거든요.</p>
+                </article>
+
+                <!-- 섹션 3: 자동완성 기능 최적화 -->
+                <article class="section-card">
+                    <h2>✨ 자동완성 기능 최적화 방법, 생각보다 간단해요</h2>
+                    <p>사용자가 검색창에 타이핑할 때 뜨는 자동완성 제안, 이게 생각보다 SEO에 엄청난 영향을 줘요. 자동완성 기능 최적화 방법을 잘 이해하면, 당신의 키워드가 검색창에 자연스럽게 노출될 확률이 올라가요.</p>
+                    <p>제가 직접 테스트해본 최적화 팁을 알려드릴게요:</p>
+                    <ol>
+                        <li><strong>롱테일 키워드의 질문형 변형</strong> — "도메인 지수 탈모 방지"보다 "도메인 지수 탈모 어떻게 막나요?" 같은 질문형이 자동완성에 더 잘 잡혀요.</li>
+                        <li><strong>지역명 결합</strong> — "지수 성장 클리닉 강남"처럼 지역을 붙이면 지역 기반 자동완성에 포함될 확률이 높아져요.</li>
+                        <li><strong>사용자 의도 매칭</strong> — 정보성, 구매성, 비교성 키워드를 골고루 섞어서 자동완성 알고리즘 비교 분석을 해보면, 어떤 유형이 내 도메인에 유리한지 알 수 있어요.</li>
+                    </ol>
+                    <div class="highlight-box">
+                        <p>💡 꿀팁: 구글 서치 콘솔의 '검색어' 보고서를 보면, 실제 사용자들이 어떤 쿼리로 유입되는지 알 수 있어요. 이 데이터를 기반으로 자동완성 사용자 경험 개선 팁을 적용하면 효과가 두 배예요.</p>
+                    </div>
+                </article>
+</body>
+</html>
